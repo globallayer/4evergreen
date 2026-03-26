@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | 4EverGreen</title>
+  <meta name="description" content="Get in touch with 4EverGreen for custom semi-artificial tree consultations. Based in London, delivering across the UK.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'><text x='50%' y='32' text-anchor='middle' font-family='Georgia,serif' font-size='28' font-weight='500' fill='%232B3D39'>4EG</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">4EverGreen</a>
+        <ul class="nav__links">
+          <li><a href="projects.html" class="nav__link">Projects</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="mobile-menu__close" aria-label="Close">&times;</button>
+    <ul class="mobile-menu__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p class="lead">Let's create something beautiful together.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section section--cream" style="padding-top: 0;">
+    <div class="container">
+      <div class="contact-section fade-in">
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2 class="mb-lg">Start a Conversation</h2>
+          <p class="mb-lg">Whether you're an interior designer seeking statement pieces, a developer furnishing a new development, or a homeowner looking to elevate your space — we'd love to hear from you.</p>
+
+          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+            <!-- Web3Forms Access Key - Get yours at https://web3forms.com (free, just enter your email) -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="hidden" name="subject" value="New Enquiry from 4EverGreen Website">
+            <input type="hidden" name="from_name" value="4EverGreen Website">
+            <!-- Honeypot spam protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+              <label for="project-type">Project Type</label>
+              <select id="project-type" name="project_type" required>
+                <option value="">Select...</option>
+                <option value="Private Residence">Private Residence</option>
+                <option value="Yacht / Superyacht">Yacht / Superyacht</option>
+                <option value="Office">Office</option>
+                <option value="Property Development">Property Development</option>
+                <option value="Interior Design Project">Interior Design Project</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project, the space, and what you're looking for..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--filled">Send Enquiry</button>
+
+            <!-- Success/Error messages -->
+            <div id="form-success" class="form-message" style="display:none;">
+              <h3>Thank you for your enquiry</h3>
+              <p>We'll be in touch within 24 hours.</p>
+            </div>
+            <div id="form-error" class="form-message form-message--error" style="display:none;">
+              <p>Something went wrong. Please email us directly at <a href="mailto:contact@4evergreen.co.uk">contact@4evergreen.co.uk</a></p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+          <h3>Direct Contact</h3>
+
+          <div class="contact-details__item">
+            <div class="contact-details__label">Email</div>
+            <div class="contact-details__value">
+              <a href="mailto:contact@4evergreen.co.uk">contact@4evergreen.co.uk</a>
+            </div>
+          </div>
+
+          <div class="contact-details__item">
+            <div class="contact-details__label">Phone</div>
+            <div class="contact-details__value">
+              <a href="tel:+447822011814">+44 7822 011 814</a>
+            </div>
+          </div>
+
+          <div class="contact-details__item">
+            <div class="contact-details__label">Location</div>
+            <div class="contact-details__value">
+              Office in London, UK
+            </div>
+          </div>
+
+          <div class="contact-details__item">
+            <div class="contact-details__label">Response Time</div>
+            <div class="contact-details__value">
+              We typically respond within 24 hours
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">4EverGreen</div>
+          <p class="footer__tagline">The Art of the Semi-Natural Tree</p>
+        </div>
+        <div class="footer__links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Get in Touch</h4>
+          <p><a href="mailto:contact@4evergreen.co.uk">contact@4evergreen.co.uk</a></p>
+          <p><a href="tel:+447822011814">+44 7822 011 814</a></p>
+          <p style="margin-top: 16px; opacity: 0.6;">Office in London, UK</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 4EverGreen. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

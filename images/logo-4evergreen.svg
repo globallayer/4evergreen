@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&amp;display=swap');
+      .logo-text {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-size: 36px;
+        font-weight: 500;
+        fill: #2B3D39;
+        letter-spacing: 0.05em;
+      }
+    </style>
+  </defs>
+  <text x="10" y="37" class="logo-text">4EverGreen</text>
+</svg>

@@ -1,0 +1,168 @@
+================================================================================
+                    4EVERGREEN WEBSITE - DEPLOYMENT GUIDE
+                            4evergreen.co.uk
+================================================================================
+
+WHAT YOU HAVE
+-------------
+/4EverGreen/
+├── index.html          (Home page)
+├── collection.html     (Product collection)
+├── projects.html       (Portfolio / Alba case study)
+├── about.html          (About the craft)
+├── contact.html        (Contact form)
+├── css/
+│   └── style.css       (All styles)
+├── js/
+│   └── main.js         (Interactions)
+└── images/             (ADD YOUR IMAGES HERE)
+
+
+================================================================================
+STEP 1: ADD YOUR IMAGES
+================================================================================
+
+Create/export these images from your brochure and save them to the /images/ folder:
+
+REQUIRED IMAGES:
+----------------
+1. hero-tree.jpg        - Homepage hero (tree in luxury interior)
+                          Recommended: 1920x1080px or larger
+
+2. trunk-detail.jpg     - Close-up of natural wood trunk texture
+                          Recommended: 800x1000px
+
+3. olive-tree.jpg       - Olive tree product shot (styled setting)
+                          Recommended: 800x1000px
+
+4. lemon-tree.jpg       - Lemon tree product shot (styled setting)
+                          Recommended: 800x1000px
+
+5. artisan.jpg          - Artisan working on tree (brochure page 3)
+                          Recommended: 1920x800px
+
+6. trunk-close.jpg      - Another trunk detail shot
+                          Recommended: 600x800px
+
+7. benefits.jpg         - Beautiful tree in setting
+                          Recommended: 600x800px
+
+ALBA RESTAURANT IMAGES (from brochure page 7):
+----------------------------------------------
+8.  alba-hero.jpg       - Best overall shot (for featured section)
+9.  alba-main.jpg       - Project hero image
+10. alba-1.jpg          - Gallery image 1
+11. alba-2.jpg          - Gallery image 2
+12. alba-3.jpg          - Gallery image 3
+13. alba-4.jpg          - Gallery image 4
+14. alba-5.jpg          - Gallery image 5
+15. alba-6.jpg          - Gallery image 6
+
+IMAGE TIPS:
+- Use JPG format for photos
+- Optimize for web (compress to ~100-300KB each)
+- Keep aspect ratios consistent for gallery images
+- Hero images should be high quality but under 500KB
+
+
+================================================================================
+STEP 2: SET UP CONTACT FORM (REQUIRED - 2 MINUTES)
+================================================================================
+
+The contact form uses Web3Forms to send emails to contact@4evergreen.co.uk.
+
+SETUP STEPS:
+1. Go to https://web3forms.com
+2. Enter your email: contact@4evergreen.co.uk
+3. Click "Create Access Key"
+4. Check your email for the access key (looks like: a1b2c3d4-e5f6-7890-abcd-ef1234567890)
+5. In contact.html, find this line:
+   <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+6. Replace YOUR_ACCESS_KEY_HERE with your actual access key
+
+TESTING:
+- After uploading, submit a test enquiry from the contact page
+- You should receive an email within seconds
+- If you don't, check your spam folder
+
+
+================================================================================
+STEP 3: UPLOAD TO GODADDY
+================================================================================
+
+Method A: File Manager (Easiest)
+1. Log in to GoDaddy
+2. Go to My Products → Web Hosting → Manage
+3. Click "File Manager"
+4. Navigate to public_html (or www folder)
+5. Delete any existing files (keep a backup)
+6. Upload ALL files from the /4EverGreen/ folder:
+   - index.html
+   - collection.html
+   - projects.html
+   - about.html
+   - contact.html
+   - css/ folder (with style.css inside)
+   - js/ folder (with main.js inside)
+   - images/ folder (with all your images)
+
+Method B: FTP (For larger uploads)
+1. Download FileZilla (free): https://filezilla-project.org
+2. Get FTP credentials from GoDaddy:
+   - Go to My Products → Web Hosting → Manage → Settings → FTP
+3. Connect with FileZilla using your credentials
+4. Upload files to public_html folder
+
+
+================================================================================
+STEP 4: TEST YOUR SITE
+================================================================================
+
+After uploading, visit: https://4evergreen.co.uk
+
+Check:
+[ ] Homepage loads with hero image
+[ ] Navigation works on all pages
+[ ] Mobile menu works on phone
+[ ] All images display correctly
+[ ] Contact form submits (check your email)
+[ ] Footer links work
+[ ] Scroll animations work
+
+
+================================================================================
+OPTIONAL: CUSTOM DOMAIN EMAIL
+================================================================================
+
+For a more professional email (e.g., hello@4evergreen.co.uk):
+1. GoDaddy offers email hosting
+2. Or use Zoho Mail free tier: https://www.zoho.com/mail/
+
+
+================================================================================
+NEED CHANGES?
+================================================================================
+
+Common customizations:
+
+CHANGE COLORS:
+- Open css/style.css
+- Edit the :root section at the top
+- Change the color hex codes
+
+CHANGE FONTS:
+- Edit the Google Fonts link in each HTML file's <head>
+- Update --font-serif and --font-sans in css/style.css
+
+ADD NEW PROJECT:
+- Copy the Alba section in projects.html
+- Update images and text
+
+CHANGE CONTACT EMAIL:
+- Search and replace "contact@4evergreen.co.uk" across all files
+
+
+================================================================================
+                              Questions?
+          This site was designed for 4EverGreen - 4evergreen.co.uk
+================================================================================

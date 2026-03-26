@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | 4EverGreen</title>
+  <meta name="description" content="Selected installations across private residences, yachts, and offices.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'><text x='50%' y='32' text-anchor='middle' font-family='Georgia,serif' font-size='28' font-weight='500' fill='%232B3D39'>4EG</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 70vh;
+    }
+    .project-card:nth-child(even) {
+      direction: rtl;
+    }
+    .project-card:nth-child(even) > * {
+      direction: ltr;
+    }
+    .project-card__image {
+      position: relative;
+      overflow: hidden;
+    }
+    .project-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .project-card__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px;
+      background: var(--bg-cream);
+    }
+    .project-card:nth-child(even) .project-card__content {
+      background: var(--bg-white);
+    }
+    .project-card__label {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+    .project-card__title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3vw, 2.5rem);
+      margin-bottom: 24px;
+    }
+    .project-card__description {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      max-width: 480px;
+    }
+    @media (max-width: 1024px) {
+      .project-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+      .project-card:nth-child(even) {
+        direction: ltr;
+      }
+      .project-card__image {
+        aspect-ratio: 16/10;
+      }
+      .project-card__content {
+        padding: 48px 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">4EverGreen</a>
+        <ul class="nav__links">
+          <li><a href="projects.html" class="nav__link nav__link--active">Projects</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="mobile-menu__close" aria-label="Close">&times;</button>
+    <ul class="mobile-menu__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Selected Work</h1>
+      <p class="lead">Private residences, offices, and beyond.</p>
+    </div>
+  </header>
+
+  <!-- Project 1: Modern Penthouse -->
+  <section class="project-card">
+    <div class="project-card__image">
+      <img src="images/hero-tree.jpg" alt="Olive tree in modern penthouse with marble walls and city skyline">
+    </div>
+    <div class="project-card__content">
+      <span class="project-card__label">Private Residence</span>
+      <h2 class="project-card__title">City Penthouse</h2>
+      <p class="project-card__description">A sculptural olive tree set against floor-to-ceiling windows and book-matched marble. The polished brass planter complements the client's collection of contemporary art and mid-century furniture.</p>
+    </div>
+  </section>
+
+  <!-- Project 2: Corporate Atrium -->
+  <section class="project-card">
+    <div class="project-card__image">
+      <img src="images/corporate-lobby.png" alt="Monumental olive tree in corporate atrium with skylights">
+    </div>
+    <div class="project-card__content">
+      <span class="project-card__label">Office</span>
+      <h2 class="project-card__title">Corporate Headquarters</h2>
+      <p class="project-card__description">A commanding centrepiece for a triple-height atrium. The ancient trunk rises from a bronze planter, creating a natural focal point that welcomes visitors and anchors the reception space.</p>
+    </div>
+  </section>
+
+  <!-- Project 3: Penthouse at Sunset -->
+  <section class="project-card">
+    <div class="project-card__image">
+      <img src="images/penthouse-sunset.png" alt="Ancient gnarled olive trunk in penthouse at sunset with city views">
+    </div>
+    <div class="project-card__content">
+      <span class="project-card__label">Private Residence</span>
+      <h2 class="project-card__title">Sunset Residence</h2>
+      <p class="project-card__description">Selected for its exceptional character, this ancient trunk features dramatic gnarled form that holds its own against panoramic city views. The warm wood paneling and brass planter catch the evening light.</p>
+    </div>
+  </section>
+
+  <!-- Project 4: Heritage Palazzo -->
+  <section class="project-card">
+    <div class="project-card__image">
+      <img src="images/palazzo.png" alt="Olive tree in Italian palazzo with chandelier and frescoes">
+    </div>
+    <div class="project-card__content">
+      <span class="project-card__label">Private Residence</span>
+      <h2 class="project-card__title">Heritage Villa</h2>
+      <p class="project-card__description">Bringing Mediterranean warmth to a historic property. The traditional terracotta vessel harmonises with ornate Baroque interiors, Murano chandeliers, and original frescoes.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--cream">
+    <div class="centered-block fade-in">
+      <h2>Your Space, Our Craft</h2>
+      <p>Many of our projects remain private at our clients' request. We'd be happy to discuss how we can transform your space.</p>
+      <a href="contact.html" class="btn btn--filled">Start a Conversation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">4EverGreen</div>
+          <p class="footer__tagline">The Art of the Semi-Natural Tree</p>
+        </div>
+        <div class="footer__links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Get in Touch</h4>
+          <p><a href="mailto:contact@4evergreen.co.uk">contact@4evergreen.co.uk</a></p>
+          <p><a href="tel:+447822011814">+44 7822 011 814</a></p>
+          <p style="margin-top: 16px; opacity: 0.6;">Office in London, UK</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 4EverGreen. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
