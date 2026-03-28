@@ -214,9 +214,9 @@ p {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(251, 247, 244, 0.25) 0%,
-    rgba(251, 247, 244, 0.4) 50%,
-    rgba(251, 247, 244, 0.65) 100%
+    rgba(251, 247, 244, 0.4) 0%,
+    rgba(251, 247, 244, 0.55) 50%,
+    rgba(251, 247, 244, 0.75) 100%
   );
 }
 
@@ -228,6 +228,9 @@ p {
 
 .hero__title {
   margin-bottom: var(--spacing-md);
+  text-shadow: 0 2px 20px rgba(251, 247, 244, 0.8);
+  font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
 .hero__subtitle {
@@ -235,8 +238,9 @@ p {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   font-weight: 300;
   font-style: italic;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin-bottom: var(--spacing-lg);
+  text-shadow: 0 1px 15px rgba(251, 247, 244, 0.9);
 }
 
 .hero__scroll {
