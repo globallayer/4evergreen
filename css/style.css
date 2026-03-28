@@ -231,9 +231,23 @@ p {
   text-shadow: 0 2px 20px rgba(251, 247, 244, 0.8);
   font-weight: 500;
   letter-spacing: 0.05em;
-  line-height: 0.75;
-  overflow: hidden;
-  padding: 0 0.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__title-number {
+  /* 4 stays normal */
+}
+
+.hero__title-clip {
+  display: inline-block;
+}
+
+.hero__title-text {
+  display: inline-block;
+  -webkit-clip-path: inset(19px 0 19px 0);
+  clip-path: inset(19px 0 19px 0);
 }
 
 .hero__subtitle {
