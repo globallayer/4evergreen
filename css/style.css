@@ -250,6 +250,13 @@ p {
   clip-path: inset(19px 0 19px 0);
 }
 
+@media (max-width: 768px) {
+  .hero__title-text {
+    -webkit-clip-path: inset(12px 0 12px 0);
+    clip-path: inset(12px 0 12px 0);
+  }
+}
+
 .hero__subtitle {
   font-family: var(--font-serif);
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
