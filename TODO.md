@@ -15,7 +15,7 @@
 ## CRITICAL: This Week
 
 ### Security Headers (15 min total)
-- [ ] **Create vercel.json with security headers**
+- [x] **Create vercel.json with security headers**
   ```json
   {
     "headers": [
@@ -34,15 +34,15 @@
   ```
 
 ### Accessibility - Level A Compliance (1 hour)
-- [ ] **Add skip link to all pages**
+- [x] **Add skip link to all pages**
   - Add `<a href="#main" class="skip-link">Skip to content</a>` after `<body>`
   - Add CSS: `.skip-link { position: absolute; top: -40px; } .skip-link:focus { top: 0; }`
 
-- [ ] **Add `<main>` landmark to all pages**
+- [x] **Add `<main>` landmark to all pages**
   - Wrap main content in `<main id="main">`
   - Files: index.html, projects.html, about.html, contact.html
 
-- [ ] **Add visible focus indicators**
+- [x] **Add visible focus indicators**
   - Add to style.css:
     ```css
     a:focus-visible, button:focus-visible, input:focus-visible,
@@ -52,22 +52,22 @@
     }
     ```
 
-- [ ] **Fix mobile menu focus trap**
+- [x] **Fix mobile menu focus trap**
   - Add aria-expanded to toggle button
   - Trap focus when menu is open
   - Return focus on close
 
 ### Performance Quick Wins (30 min)
-- [ ] **Add width/height to all images**
+- [x] **Add width/height to all images**
   - Hero: width="1200" height="655"
   - Add to all 7 project images
   - Prevents CLS (layout shift)
 
-- [ ] **Add loading="lazy" to below-fold images**
+- [x] **Add loading="lazy" to below-fold images**
   - Keep hero as loading="eager"
   - Add fetchpriority="high" to hero
 
-- [ ] **Preload hero image**
+- [x] **Preload hero image**
   - Add to `<head>`: `<link rel="preload" as="image" href="images/residence-london-2.jpg">`
 
 ---
@@ -119,15 +119,15 @@
   ```
 
 ### Accessibility - Level AA (1 hour)
-- [ ] **Fix secondary text contrast**
+- [x] **Fix secondary text contrast**
   - Change `--text-secondary: #6B7B77` to `#5A6A66`
   - Achieves 4.5:1 ratio on cream background
 
-- [ ] **Add aria-expanded to menu toggle**
+- [x] **Add aria-expanded to menu toggle**
   - `aria-expanded="false"` default
   - Toggle to "true" when open in JS
 
-- [ ] **Add role="alert" to form messages**
+- [x] **Add role="alert" to form messages**
   - `<div id="form-success" role="alert">`
   - `<div id="form-error" role="alert">`
 
@@ -255,6 +255,19 @@
 - [x] ROADMAP.md updated
 - [x] TODO.md updated
 
+### March 29, 2026 - Critical Fixes Implementation
+- [x] vercel.json with security headers (CSP, X-Frame-Options, etc.)
+- [x] Skip link on all 4 pages
+- [x] `<main>` landmark on all 4 pages
+- [x] Visible focus indicators (CSS)
+- [x] Mobile menu focus trap + aria-expanded
+- [x] Image dimensions (width/height) on all images
+- [x] loading="lazy" on below-fold images
+- [x] fetchpriority="high" on hero images
+- [x] Hero image preload
+- [x] Text contrast fix (--text-secondary)
+- [x] role="alert" on form messages
+
 ---
 
 ## Quick Reference
@@ -268,7 +281,7 @@
 | Security | 78/100 | 92+ |
 
 ### Key Files to Create
-- [ ] vercel.json (security headers)
+- [x] vercel.json (security headers)
 - [ ] privacy.html
 - [ ] terms.html
 - [ ] 404.html

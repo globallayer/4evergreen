@@ -18,28 +18,72 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', handleScroll);
   handleScroll(); // Check on load
 
-  // Mobile menu toggle
+  // Mobile menu toggle with accessibility
   const menuToggle = document.querySelector('.nav__toggle');
   const mobileMenu = document.querySelector('.mobile-menu');
   const mobileMenuClose = document.querySelector('.mobile-menu__close');
   const mobileMenuLinks = document.querySelectorAll('.mobile-menu__links a');
 
   if (menuToggle && mobileMenu) {
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.add('mobile-menu--open');
-      document.body.style.overflow = 'hidden';
-    });
+    // Get all focusable elements in mobile menu
+    const getFocusableElements = () => {
+      return mobileMenu.querySelectorAll(
+        'button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+    };
 
-    mobileMenuClose.addEventListener('click', () => {
+    const openMenu = () => {
+      mobileMenu.classList.add('mobile-menu--open');
+      menuToggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+      // Focus first element in menu
+      const focusable = getFocusableElements();
+      if (focusable.length) focusable[0].focus();
+    };
+
+    const closeMenu = () => {
       mobileMenu.classList.remove('mobile-menu--open');
+      menuToggle.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
-    });
+      // Return focus to toggle button
+      menuToggle.focus();
+    };
+
+    menuToggle.addEventListener('click', openMenu);
+    mobileMenuClose.addEventListener('click', closeMenu);
 
     mobileMenuLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('mobile-menu--open');
-        document.body.style.overflow = '';
-      });
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('mobile-menu--open')) {
+        closeMenu();
+      }
+    });
+
+    // Focus trap within mobile menu
+    mobileMenu.addEventListener('keydown', (e) => {
+      if (e.key !== 'Tab') return;
+
+      const focusable = getFocusableElements();
+      const firstFocusable = focusable[0];
+      const lastFocusable = focusable[focusable.length - 1];
+
+      if (e.shiftKey) {
+        // Shift + Tab
+        if (document.activeElement === firstFocusable) {
+          e.preventDefault();
+          lastFocusable.focus();
+        }
+      } else {
+        // Tab
+        if (document.activeElement === lastFocusable) {
+          e.preventDefault();
+          firstFocusable.focus();
+        }
+      }
     });
   }
 

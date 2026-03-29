@@ -35,7 +35,7 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'><text x='50%' y='32' text-anchor='middle' font-family='Georgia,serif' font-size='28' font-weight='500' fill='%232B3D39'>4EG</text></svg>">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=27">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -95,6 +95,7 @@
   </script>
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- Navigation -->
   <nav class="nav">
@@ -106,7 +107,7 @@
           <li><a href="about.html" class="nav__link">About</a></li>
           <li><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
         </ul>
-        <button class="nav__toggle" aria-label="Menu">
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span>
           <span></span>
           <span></span>
@@ -116,7 +117,7 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu">
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
     <button class="mobile-menu__close" aria-label="Close">&times;</button>
     <ul class="mobile-menu__links">
       <li><a href="index.html">Home</a></li>
@@ -125,6 +126,8 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
+
+  <main id="main">
 
   <!-- Page Header -->
   <header class="page-header">
@@ -188,11 +191,11 @@
             <button type="submit" class="btn btn--filled">Send Enquiry</button>
 
             <!-- Success/Error messages -->
-            <div id="form-success" class="form-message" style="display:none;">
+            <div id="form-success" class="form-message" role="alert" aria-live="polite" style="display:none;">
               <h3>Thank you for your enquiry</h3>
               <p>We'll be in touch within 24 hours.</p>
             </div>
-            <div id="form-error" class="form-message form-message--error" style="display:none;">
+            <div id="form-error" class="form-message form-message--error" role="alert" aria-live="assertive" style="display:none;">
               <p>Something went wrong. Please email us directly at <a href="mailto:contact@4evergreen.co.uk">contact@4evergreen.co.uk</a></p>
             </div>
           </form>
@@ -235,6 +238,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

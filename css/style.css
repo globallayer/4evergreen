@@ -8,7 +8,7 @@
   --bg-cream: #FBF7F4;
   --bg-white: #FFFFFF;
   --text-primary: #2B3D39;
-  --text-secondary: #6B7B77;
+  --text-secondary: #5A6A66; /* Improved contrast: 4.6:1 on cream */
   --accent: #D4B896;
   --accent-hover: #C4A67A;
   --border-light: rgba(43, 61, 57, 0.1);
@@ -56,6 +56,45 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/* Skip Link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text-primary);
+  color: var(--bg-cream);
+  padding: var(--spacing-sm) var(--spacing-md);
+  z-index: 9999;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: var(--spacing-sm);
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Focus Indicators - Accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Remove default focus for mouse users, keep for keyboard */
+:focus:not(:focus-visible) {
+  outline: none;
 }
 
 /* Typography */
@@ -767,8 +806,8 @@ p {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  outline: none;
   border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(212, 184, 150, 0.3);
 }
 
 .form-group textarea {

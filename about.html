@@ -35,7 +35,7 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'><text x='50%' y='32' text-anchor='middle' font-family='Georgia,serif' font-size='28' font-weight='500' fill='%232B3D39'>4EG</text></svg>">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=27">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -107,6 +107,7 @@
   </script>
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- Navigation -->
   <nav class="nav">
@@ -118,7 +119,7 @@
           <li><a href="about.html" class="nav__link nav__link--active">About</a></li>
           <li><a href="contact.html" class="nav__link">Contact</a></li>
         </ul>
-        <button class="nav__toggle" aria-label="Menu">
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span>
           <span></span>
           <span></span>
@@ -128,7 +129,7 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu">
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
     <button class="mobile-menu__close" aria-label="Close">&times;</button>
     <ul class="mobile-menu__links">
       <li><a href="index.html">Home</a></li>
@@ -138,10 +139,12 @@
     </ul>
   </div>
 
+  <main id="main">
+
   <!-- Hero -->
   <section class="about-hero">
     <div class="about-hero__bg">
-      <img src="images/private-residence-london.jpg" alt="Crafted olive tree at sunset">
+      <img src="images/private-residence-london.jpg" alt="Crafted olive tree at sunset" width="800" height="600" fetchpriority="high">
       <div class="about-hero__overlay"></div>
     </div>
     <h1 class="about-hero__title">Crafted by Hand</h1>
@@ -158,7 +161,7 @@
           <p>We then finish each piece with UV-resistant foliage designed for longevity in any indoor environment. The result is a tree that captures the organic beauty of nature without its demands.</p>
         </div>
         <div class="story-section__image">
-          <img src="images/private-office-london.jpg" alt="Natural wood trunk detail">
+          <img src="images/private-office-london.jpg" alt="Natural wood trunk detail" width="800" height="600" loading="lazy">
         </div>
       </div>
     </div>
@@ -189,7 +192,7 @@
     <div class="container">
       <div class="story-section fade-in">
         <div class="story-section__image" style="order: -1;">
-          <img src="images/residence-tuscany.jpg" alt="Semi-artificial tree in heritage setting">
+          <img src="images/residence-tuscany.jpg" alt="Semi-artificial tree in heritage setting" width="1200" height="800" loading="lazy">
         </div>
         <div class="story-section__content">
           <h2>Benefits Beyond Aesthetics</h2>
@@ -242,6 +245,8 @@
       <a href="contact.html" class="btn btn--filled">Get in Touch</a>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
