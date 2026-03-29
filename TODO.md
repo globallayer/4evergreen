@@ -81,7 +81,7 @@
   - Set up conversion event for form submission
   - Test tracking works
 
-- [ ] **Add Google Search Console**
+- [x] **Add Google Search Console**
   - Verify domain ownership (DNS or HTML tag)
   - Submit sitemap.xml
   - Monitor indexing status
