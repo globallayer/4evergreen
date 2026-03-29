@@ -28,6 +28,9 @@ Use `@skill-name` to invoke any of these project-relevant skills:
 
 ---
 
+### Documentation & Diagrams
+- `/excalidraw-diagram` — Create visual architecture diagrams, workflows, and system designs
+
 ## Development Rules
 
 1. **Never mark a task done** until the user has tested it and explicitly confirmed it works.
