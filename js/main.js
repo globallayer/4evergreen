@@ -182,4 +182,38 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.appendChild(script);
   }
 
+  // Cookie Consent Banner
+  const cookieBanner = document.getElementById('cookie-banner');
+  const cookieAccept = document.getElementById('cookie-accept');
+  const cookieDecline = document.getElementById('cookie-decline');
+
+  if (cookieBanner) {
+    const cookieConsent = localStorage.getItem('cookie-consent');
+
+    // Show banner if no consent decision has been made
+    if (cookieConsent === null) {
+      setTimeout(() => {
+        cookieBanner.classList.add('cookie-banner--visible');
+      }, 1000);
+    }
+
+    // Handle accept
+    if (cookieAccept) {
+      cookieAccept.addEventListener('click', () => {
+        localStorage.setItem('cookie-consent', 'accepted');
+        cookieBanner.classList.remove('cookie-banner--visible');
+        // Here you would initialize analytics (GA4, etc.)
+        // initializeAnalytics();
+      });
+    }
+
+    // Handle decline
+    if (cookieDecline) {
+      cookieDecline.addEventListener('click', () => {
+        localStorage.setItem('cookie-consent', 'declined');
+        cookieBanner.classList.remove('cookie-banner--visible');
+      });
+    }
+  }
+
 });

@@ -136,7 +136,7 @@
 ## MEDIUM PRIORITY: Week 3-4
 
 ### SEO & Trust Signals
-- [ ] **Add client testimonials**
+- [x] **Add client testimonials**
   - 2-3 quotes with names
   - Add to home page or about page
   - Add Review schema markup
@@ -166,7 +166,7 @@
   - Add more photos per project
   - Detailed descriptions
 
-- [ ] **Add cookie consent banner**
+- [x] **Add cookie consent banner**
   - Required if using GA4
   - Simple CSS-only solution
   - Store preference in localStorage
