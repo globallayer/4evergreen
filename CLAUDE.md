@@ -1,25 +1,38 @@
-# Project Development Guidelines
+# 4EverGreen - Project Guidelines
+
+## Project Overview
+Luxury semi-artificial trees website.
+
+---
 
 ## Skills - ALWAYS USE RELEVANT SKILLS
 
-Always check and use the available skills (slash commands) that are relevant to the current task:
+Use `@skill-name` to invoke any of these project-relevant skills:
 
-- `/frontend-design` — Use BEFORE writing any UI/component code to ensure distinctive, production-grade interfaces that avoid generic aesthetics
-- `/browser-use` — Use when needing to navigate websites, interact with web pages, fill forms, take screenshots, or extract data from web pages
-- `/remotion-best-practices` — Use when working with Remotion to create videos with React. All animations must use `useCurrentFrame()` — no CSS transitions or Tailwind animation classes
-- `/simplify` — Use after writing code to review for reuse, quality, and efficiency
+### SEO & Marketing
+- `@seo` — General SEO best practices
+- `@seo-audit` — Comprehensive SEO audits
+- `@seo-content` — SEO-optimized content writing
+- `@seo-technical` — Technical SEO implementation
+- `@seo-schema` — Schema markup for rich snippets
+- `@seo-images` — Image optimization for SEO
+- `@programmatic-seo` — Programmatic SEO strategies
 
-Do NOT ignore available skills. Always apply the right skill for the job.
+### Design & Frontend
+- `@landing-page-generator` — Create high-converting landing pages
+- `@tailwind-patterns` — Tailwind CSS best practices
+- `/frontend-design` — Distinctive UI design (invoke before writing UI code)
+
+### Automation
+- `/browser-use` — Browser automation for testing
 
 ---
 
 ## Development Rules
 
 1. **Never mark a task done** until the user has tested it and explicitly confirmed it works.
-2. **Always update TODO.md** after the user confirms a task is completed (if applicable).
-3. **Frontend design**: When building any web component, page, or UI, invoke the `/frontend-design` skill BEFORE writing code.
-4. **Browser automation**: When needing to navigate websites, interact with web pages, fill forms, take screenshots, or extract data from web pages, invoke the `/browser-use` skill.
-5. **Video creation**: When working with Remotion code to create videos with React, invoke the `/remotion-best-practices` skill.
+2. **Frontend design**: When building any web component, page, or UI, invoke the `/frontend-design` skill BEFORE writing code.
+3. **SEO first**: All pages must be SEO-optimized. Run `@seo-audit` before deploying.
 
 ---
 
@@ -28,8 +41,7 @@ Do NOT ignore available skills. Always apply the right skill for the job.
 After completing any implementation, review the code for:
 - Functions longer than 30 lines (likely doing too much)
 - Logic duplicated more than twice (extract to utility)
-- Any `any` type usage in TypeScript (replace with real types)
-- Components with more than 3 props that could be grouped into an object
+- Missing meta tags, alt text, or schema markup
 - Missing error handling on async operations
 
 **Run `/simplify` before presenting code to the user.**
