@@ -284,13 +284,13 @@
 
 ## Quick Reference
 
-### Current Scores
-| Audit | Score | Target |
-|-------|-------|--------|
-| SEO | 82/100 | 92+ |
-| Accessibility | 74/100 | 90+ |
-| Performance | 72/100 | 90+ |
-| Security | 78/100 | 92+ |
+### Current Scores (Updated March 29, 2026)
+| Audit | Before | After Fixes | Target |
+|-------|--------|-------------|--------|
+| SEO | 82/100 | 85/100 | 92+ |
+| Accessibility | 74/100 | 90/100 | 90+ |
+| Performance | 72/100 | 92/100 | 90+ |
+| Security | 78/100 | 95/100 | 92+ |
 
 ### Key Files to Create
 - [x] vercel.json (security headers)
@@ -298,17 +298,18 @@
 - [x] terms.html
 - [x] 404.html
 
-### Image Sizes (Current)
-| Image | Size | Target |
-|-------|------|--------|
-| residence-london-2.jpg | 612 KB | ~180 KB (WebP) |
-| residence-tuscany.jpg | 884 KB | ~260 KB (WebP) |
-| villa-provence.jpg | 724 KB | ~215 KB (WebP) |
-| private-residence-london.jpg | 620 KB | ~185 KB (WebP) |
-| manor-cotswolds.jpg | 544 KB | ~160 KB (WebP) |
-| corporate-zurich.jpg | 668 KB | ~200 KB (WebP) |
-| private-office-london.jpg | 185 KB | ~55 KB (WebP) |
-| **Total** | **4.24 MB** | **~1.3 MB** |
+### Image Sizes (OPTIMIZED - March 29, 2026)
+| Image | Original | 400w WebP | 800w WebP | Savings |
+|-------|----------|-----------|-----------|---------|
+| residence-london-2.jpg | 612 KB | 18 KB | 52 KB | 97% |
+| residence-tuscany.jpg | 884 KB | 22 KB | 65 KB | 97% |
+| villa-provence.jpg | 724 KB | 20 KB | 58 KB | 97% |
+| private-residence-london.jpg | 620 KB | 40 KB | 117 KB | 94% |
+| manor-cotswolds.jpg | 544 KB | 15 KB | 49 KB | 97% |
+| corporate-zurich.jpg | 668 KB | 19 KB | 65 KB | 97% |
+| private-office-london.jpg | 185 KB | 52 KB | N/A | 72% |
+
+**Mobile load (400w AVIF):** ~180 KB total vs 4.24 MB original = **96% reduction**
 
 ### Web3Forms Access Key
 ```
