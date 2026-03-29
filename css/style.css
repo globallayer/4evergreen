@@ -1273,3 +1273,64 @@ p {
     justify-content: center;
   }
 }
+
+/* ============================================
+   WhatsApp Floating Button
+   ============================================ */
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.whatsapp-btn svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Position above cookie banner when it's visible */
+.cookie-banner--visible ~ .whatsapp-btn,
+body:has(.cookie-banner--visible) .whatsapp-btn {
+  bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .whatsapp-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cookie-banner--visible ~ .whatsapp-btn,
+  body:has(.cookie-banner--visible) .whatsapp-btn {
+    bottom: 120px;
+  }
+}

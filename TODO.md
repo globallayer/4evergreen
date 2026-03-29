@@ -181,10 +181,10 @@
 ## LOW PRIORITY: Month 2
 
 ### Lead Generation
-- [ ] **Add WhatsApp chat button**
+- [x] **Add WhatsApp chat button**
   - Floating button, bottom-right
   - Link: wa.me/447822011814
-  - Only show on mobile?
+  - Shows on all devices with hover effect
 
 - [ ] **Create PDF brochure**
   - 4-6 pages
@@ -207,10 +207,10 @@
   - Portfolio showcase
   - Collect reviews
 
-- [ ] **Add Microsoft Clarity**
+- [x] **Add Microsoft Clarity**
   - Free heatmaps
   - Session recordings
-  - No GDPR consent needed
+  - Placeholder ID added (replace YOUR_CLARITY_ID with real ID)
 
 ---
 
@@ -279,6 +279,14 @@
 - [x] Updated footer links on all pages
 - [x] Updated sitemap.xml with new pages
 - [x] Connected Vercel GitHub auto-deploy
+
+### March 29, 2026 - Lead Generation & Analytics
+- [x] Added Microsoft Clarity tracking (placeholder ID)
+- [x] Added WhatsApp floating button to all 7 pages
+- [x] WhatsApp button CSS with hover effects
+- [x] Button repositions above cookie banner when visible
+- [x] Added testimonials section with 3 client quotes
+- [x] Cookie consent banner with localStorage persistence
 
 ---
 
