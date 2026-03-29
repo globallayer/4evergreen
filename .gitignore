@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build scripts (not needed in production)
+scripts/
+
+# Package files (not needed for static site)
+package.json
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo

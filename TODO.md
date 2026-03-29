@@ -95,21 +95,21 @@
   - Request first review
 
 ### Image Optimization (2 hours)
-- [ ] **Convert all images to WebP**
+- [x] **Convert all images to WebP**
   - Use sharp or squoosh
   - Target 80% quality
   - Expected: 4.3MB → 1.7MB
 
-- [ ] **Generate AVIF versions**
+- [x] **Generate AVIF versions**
   - 70% quality
   - Best compression
 
-- [ ] **Create responsive sizes**
+- [x] **Create responsive sizes**
   - 400w (mobile)
   - 800w (tablet)
   - 1200w (desktop)
 
-- [ ] **Implement `<picture>` elements**
+- [x] **Implement `<picture>` elements**
   ```html
   <picture>
     <source srcset="images/hero.avif" type="image/avif">
@@ -146,12 +146,12 @@
   - Company history/story
   - Demonstrates E-E-A-T
 
-- [ ] **Add Privacy Policy page**
+- [x] **Add Privacy Policy page**
   - privacy.html
   - Required for GDPR
   - Link from footer
 
-- [ ] **Add Terms of Service page**
+- [x] **Add Terms of Service page**
   - terms.html
   - Link from footer
 
@@ -171,7 +171,7 @@
   - Simple CSS-only solution
   - Store preference in localStorage
 
-- [ ] **Custom 404 page**
+- [x] **Custom 404 page**
   - Create 404.html
   - Match site design
   - Link back to home
@@ -268,6 +268,18 @@
 - [x] Text contrast fix (--text-secondary)
 - [x] role="alert" on form messages
 
+### March 29, 2026 - Image Optimization & Legal Pages
+- [x] Converted all images to WebP (80% quality)
+- [x] Converted all images to AVIF (70% quality)
+- [x] Created responsive sizes (400w, 800w, 1200w)
+- [x] Implemented `<picture>` elements on all pages
+- [x] Created privacy.html (GDPR-compliant)
+- [x] Created terms.html
+- [x] Created 404.html (custom error page)
+- [x] Updated footer links on all pages
+- [x] Updated sitemap.xml with new pages
+- [x] Connected Vercel GitHub auto-deploy
+
 ---
 
 ## Quick Reference
@@ -282,9 +294,9 @@
 
 ### Key Files to Create
 - [x] vercel.json (security headers)
-- [ ] privacy.html
-- [ ] terms.html
-- [ ] 404.html
+- [x] privacy.html
+- [x] terms.html
+- [x] 404.html
 
 ### Image Sizes (Current)
 | Image | Size | Target |

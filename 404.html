@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | 4EverGreen</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to 4EverGreen's homepage.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'><text x='50%' y='32' text-anchor='middle' font-family='Georgia,serif' font-size='28' font-weight='500' fill='%232B3D39'>4EG</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css?v=28">
+
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 24px;
+      background: var(--bg-cream);
+    }
+    .error-page__code {
+      font-family: var(--font-serif);
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 500;
+      color: var(--text-primary);
+      line-height: 1;
+      margin-bottom: 16px;
+      opacity: 0.15;
+    }
+    .error-page__title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-bottom: 16px;
+    }
+    .error-page__text {
+      color: var(--text-secondary);
+      max-width: 400px;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+    .error-page__links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .error-page__links a {
+      color: var(--text-primary);
+      text-decoration: underline;
+      padding: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">4EverGreen</a>
+        <ul class="nav__links">
+          <li><a href="projects.html" class="nav__link">Projects</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="mobile-menu__close" aria-label="Close">&times;</button>
+    <ul class="mobile-menu__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main id="main" class="error-page">
+    <div class="error-page__code">404</div>
+    <h1 class="error-page__title">Page Not Found</h1>
+    <p class="error-page__text">The page you're looking for has moved, been removed, or perhaps never existed. Let's get you back on track.</p>
+    <a href="index.html" class="btn btn--filled">Return Home</a>
+    <div class="error-page__links">
+      <a href="projects.html">View Projects</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
