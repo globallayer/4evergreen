@@ -1,50 +1,55 @@
 # 4EverGreen - Project Guidelines
 
+**Last Updated:** April 1, 2026
+
 ## Project Overview
-Luxury semi-artificial trees website.
+
+Luxury semi-artificial trees website. Focus on SEO and premium aesthetic.
+
+### Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| HTML/CSS | Static site |
+| JavaScript | Interactivity |
 
 ---
 
-## Skills - ALWAYS USE RELEVANT SKILLS
-
-Use `@skill-name` to invoke any of these project-relevant skills:
+## Project Skills
 
 ### SEO & Marketing
-- `@seo` — General SEO best practices
-- `@seo-audit` — Comprehensive SEO audits
-- `@seo-content` — SEO-optimized content writing
-- `@seo-technical` — Technical SEO implementation
-- `@seo-schema` — Schema markup for rich snippets
-- `@seo-images` — Image optimization for SEO
-- `@programmatic-seo` — Programmatic SEO strategies
+- `/seo` - General SEO
+- `/seo-audit` - Comprehensive audits
+- `/seo-content` - SEO content writing
+- `/seo-technical` - Technical SEO
+- `/seo-schema` - Schema markup
+- `/seo-images` - Image optimization
+- `/programmatic-seo` - Programmatic SEO
 
 ### Design & Frontend
-- `@landing-page-generator` — Create high-converting landing pages
-- `@tailwind-patterns` — Tailwind CSS best practices
-- `/frontend-design` — Distinctive UI design (invoke before writing UI code)
+- `/frontend-design` - UI design (invoke BEFORE writing UI code)
+- `/landing-page-generator` - Landing pages
+- `/tailwind-patterns` - Tailwind CSS
 
 ### Automation
-- `/browser-use` — Browser automation for testing
+- `/browser-use` - Browser automation
 
 ---
-
-### Documentation & Diagrams
-- `/excalidraw-diagram` — Create visual architecture diagrams, workflows, and system designs
 
 ## Development Rules
 
-1. **Never mark a task done** until the user has tested it and explicitly confirmed it works.
-2. **Frontend design**: When building any web component, page, or UI, invoke the `/frontend-design` skill BEFORE writing code.
-3. **SEO first**: All pages must be SEO-optimized. Run `@seo-audit` before deploying.
+1. **Never mark a task done** until user confirms it works.
+2. **Frontend design**: Invoke `/frontend-design` BEFORE writing UI code.
+3. **SEO first**: All pages must be SEO-optimized. Run `/seo-audit` before deploying.
 
 ---
 
 ## Code Review Standards
 
-After completing any implementation, review the code for:
-- Functions longer than 30 lines (likely doing too much)
-- Logic duplicated more than twice (extract to utility)
+After completing any implementation:
+- Functions < 30 lines
+- No duplicated logic
 - Missing meta tags, alt text, or schema markup
 - Missing error handling on async operations
 
-**Run `/simplify` before presenting code to the user.**
+**Run `/simplify` before presenting code.**
