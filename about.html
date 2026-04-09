@@ -75,9 +75,40 @@
         }
       ]
     },
-    "mainEntity": {
-      "@type": "FAQPage",
-      "mainEntity": [
+    "mainEntity": [
+      {
+        "@type": "Person",
+        "@id": "https://4evergreen.co.uk/about.html#founder",
+        "name": "[FOUNDER_NAME]",
+        "jobTitle": "Founder & Creative Director",
+        "description": "Founder of 4EverGreen with over 15 years of experience in botanical design and interior landscaping.",
+        "image": "https://4evergreen.co.uk/images/founder-photo.jpg",
+        "url": "https://4evergreen.co.uk/about.html",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "4EverGreen",
+          "url": "https://4evergreen.co.uk"
+        },
+        "knowsAbout": [
+          "Botanical Design",
+          "Interior Landscaping",
+          "Wood Preservation",
+          "Semi-Natural Trees",
+          "Luxury Interiors"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Society of Garden Designers"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "London",
+          "addressCountry": "GB"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
         {
           "@type": "Question",
           "name": "What is a semi-natural tree?",
@@ -111,7 +142,8 @@
           }
         }
       ]
-    }
+      }
+    ]
   }
   </script>
 </head>
@@ -258,8 +290,73 @@
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- Founder Section -->
   <section class="section section--white">
+    <div class="container">
+      <div class="founder-section fade-in">
+        <div class="founder-section__image">
+          <!-- PLACEHOLDER: Replace with actual founder photo -->
+          <div class="founder-section__photo-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M4 20c0-4.418 3.582-8 8-8s8 3.582 8 8"/>
+            </svg>
+            <span>Founder Photo</span>
+          </div>
+        </div>
+        <div class="founder-section__content">
+          <span class="founder-section__label">Meet the Founder</span>
+          <!-- PLACEHOLDER: Replace [FOUNDER_NAME] with actual name -->
+          <h2>[Founder Name]</h2>
+          <p class="lead">The vision behind 4EverGreen was born from a simple observation: the most beautiful interiors deserve greenery that lasts as long as the spaces themselves.</p>
+          <p>After more than a decade working at the intersection of interior design and botanical artistry, [Founder Name] founded 4EverGreen with a singular mission: to create trees that capture the essence of nature without its inherent limitations. What began as a passion project crafting bespoke pieces for friends and colleagues has grown into a studio serving discerning clients across the UK and Europe.</p>
+          <p>"Every trunk tells a story," [Founder Name] explains. "We source aged olive wood from sustainable European forests, each piece selected for its unique character. Our role is simply to let that natural beauty speak while ensuring it endures for generations."</p>
+
+          <div class="founder-section__credentials">
+            <h3>Industry Experience</h3>
+            <ul class="credentials-list">
+              <!-- PLACEHOLDER: Update with actual credentials -->
+              <li>
+                <span class="credentials-list__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>15+ years in botanical design and interior landscaping</span>
+              </li>
+              <li>
+                <span class="credentials-list__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Trained in traditional woodcraft and preservation techniques</span>
+              </li>
+              <li>
+                <span class="credentials-list__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Collaborations with leading UK architects and interior designers</span>
+              </li>
+              <li>
+                <span class="credentials-list__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Member of the Society of Garden Designers</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--cream">
     <div class="centered-block fade-in">
       <h2>We want you to have the tree of your dreams lasting for a lifetime</h2>
       <p>Whether for a private residence or a landmark corporate space, we craft trees that endure and inspire.</p>
